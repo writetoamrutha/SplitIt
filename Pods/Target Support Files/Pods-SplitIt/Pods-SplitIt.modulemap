@@ -1,0 +1,6 @@
+framework module Pods_SplitIt {
+  umbrella header "Pods-SplitIt-umbrella.h"
+
+  export *
+  module * { export * }
+}
