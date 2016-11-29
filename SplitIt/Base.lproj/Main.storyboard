@@ -26,10 +26,10 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
         </scene>
-        <!--View Controller-->
+        <!--Landing Page View Controller-->
         <scene sceneID="tAv-Xe-HWC">
             <objects>
-                <viewController id="jHO-hN-enh" sceneMemberID="viewController">
+                <viewController id="jHO-hN-enh" customClass="LandingPageViewController" customModule="SplitIt" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="Idd-aA-Rb7"/>
                         <viewControllerLayoutGuide type="bottom" id="HpV-HU-s6V"/>
@@ -37,13 +37,19 @@
                     <view key="view" contentMode="scaleToFill" id="BaI-oa-0LB">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="9g7-in-gMa">
+                                <frame key="frameInset" minX="96" minY="177" width="140" height="140"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                        </subviews>
                         <color key="backgroundColor" red="0.26423783172813409" green="0.26326844363061558" blue="0.67582131410256419" alpha="1" colorSpace="calibratedRGB"/>
                         <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="B0P-vS-GvA" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="893" y="106"/>
+            <point key="canvasLocation" x="892.5" y="105.63380281690141"/>
         </scene>
     </scenes>
 </document>

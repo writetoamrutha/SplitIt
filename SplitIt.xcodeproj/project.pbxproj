@@ -16,6 +16,7 @@
 		7D8EDF301DE40CB3002C7CE1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7D8EDF2E1DE40CB3002C7CE1 /* LaunchScreen.storyboard */; };
 		7D8EDF3B1DE40CB3002C7CE1 /* SplitItTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D8EDF3A1DE40CB3002C7CE1 /* SplitItTests.swift */; };
 		7D8EDF461DE40CB3002C7CE1 /* SplitItUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D8EDF451DE40CB3002C7CE1 /* SplitItUITests.swift */; };
+		7DFC287D1DE6E502001A5562 /* LandingPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DFC287C1DE6E502001A5562 /* LandingPageViewController.swift */; };
 		B33B7BC76691AC2630CC3C74 /* Pods_SplitItTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A2E498A3803FDA00533CD6A1 /* Pods_SplitItTests.framework */; };
 /* End PBXBuildFile section */
 
@@ -54,6 +55,7 @@
 		7D8EDF451DE40CB3002C7CE1 /* SplitItUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplitItUITests.swift; sourceTree = "<group>"; };
 		7D8EDF471DE40CB3002C7CE1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		7DC55E251DE55F5C0085B2A3 /* SplitIt.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = SplitIt.entitlements; sourceTree = "<group>"; };
+		7DFC287C1DE6E502001A5562 /* LandingPageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LandingPageViewController.swift; sourceTree = "<group>"; };
 		962F298D15A7A52D3FB394FB /* Pods-SplitItUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SplitItUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SplitItUITests/Pods-SplitItUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		99B6B27B2FD9D037BC12AE58 /* Pods-SplitIt.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SplitIt.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SplitIt/Pods-SplitIt.debug.xcconfig"; sourceTree = "<group>"; };
 		A2E498A3803FDA00533CD6A1 /* Pods_SplitItTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SplitItTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -122,6 +124,7 @@
 				7D8EDF2C1DE40CB3002C7CE1 /* Assets.xcassets */,
 				7D8EDF2E1DE40CB3002C7CE1 /* LaunchScreen.storyboard */,
 				7D8EDF311DE40CB3002C7CE1 /* Info.plist */,
+				7DFC287C1DE6E502001A5562 /* LandingPageViewController.swift */,
 			);
 			path = SplitIt;
 			sourceTree = "<group>";
@@ -455,6 +458,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				7D8EDF281DE40CB3002C7CE1 /* ViewController.swift in Sources */,
+				7DFC287D1DE6E502001A5562 /* LandingPageViewController.swift in Sources */,
 				7D8EDF261DE40CB3002C7CE1 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

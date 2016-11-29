@@ -11,6 +11,8 @@ import FBSDKLoginKit
 
 class ViewController: UIViewController, FBSDKLoginButtonDelegate {
 
+    var pictureURL = ""
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -24,13 +26,13 @@ class ViewController: UIViewController, FBSDKLoginButtonDelegate {
         
         
         
-   /*  let showFriendsButton = UIButton()
+    let showFriendsButton = UIButton()
      showFriendsButton.frame = CGRect (x: 16, y: 440, width: view.frame.width - 32, height: 50)
      showFriendsButton.backgroundColor = #colorLiteral(red: 0.6525310874, green: 0.75812608, blue: 0.9692990184, alpha: 1)
      showFriendsButton.setTitle("Show Friends", for: .normal)
      view.addSubview(showFriendsButton)
      
-        showFriendsButton.addTarget(self, action: #selector(showFriends), for: .touchUpInside)*/
+        showFriendsButton.addTarget(self, action: #selector(showFriends), for: .touchUpInside)
     }
 
     override func didReceiveMemoryWarning() {
@@ -40,7 +42,7 @@ class ViewController: UIViewController, FBSDKLoginButtonDelegate {
     
     }
 
-  /*  func showFriends() {
+    func showFriends() {
         let parameters = ["fields":"name, picture.type(normal)"]
         FBSDKGraphRequest (graphPath: "/me/friends", parameters: parameters).start {(connection, result, err) in
             if err != nil {
@@ -48,7 +50,13 @@ class ViewController: UIViewController, FBSDKLoginButtonDelegate {
                 return
             }
             
-            var friends = [Friend]()
+            print(result)
+            
+
+            
+            
+            
+          /*  var friends = [Friend]()
             for friendDictionary in user["data"] as! NSDictionary {
                 let name = friendDictionary["name"] as! String
                 if let picture = friendDictionary["picture"]?["data"]?!["url"] as! String{
@@ -56,13 +64,14 @@ class ViewController: UIViewController, FBSDKLoginButtonDelegate {
                     friends.append(friend)
                 }
                 
-            }
+            }*/
             
+           
             
             
             
     }
-    }*/
+    }
     
     func loginButtonDidLogOut(_ loginButton: FBSDKLoginButton!) {
         print("Did Log out of Facebook")
@@ -78,15 +87,34 @@ class ViewController: UIViewController, FBSDKLoginButtonDelegate {
        
         FBSDKGraphRequest(graphPath: "/me", parameters: ["fields": "id, name, email, picture.type(large)"]).start { (connection, result, err) in
             
+            
+            
             if err != nil{
                 print("Failed to start graph request:", err)
                 return
             }
+            else{
+                if let dataDict = result as? [String:AnyObject] {
             
+                    
+                    
+                    if let picture = dataDict["picture"] as? [String:AnyObject], let data = picture["data"] as? NSDictionary, let URL = data["url"] as? String{
+               
+                        self.pictureURL = URL
+                        
+                
+                        
+                        
+
+            }
+                
+                }
+                
             print(result)
-            
+
             self.performSegue(withIdentifier: "landingPageSegue", sender: nil)
 
+            }
             
         }
     }
